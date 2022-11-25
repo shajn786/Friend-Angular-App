@@ -17,12 +17,12 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th></th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <th></th>
+                          <tr *ngFor="let i of data">
+                            <th>{{i._id}}</th>
+                            <td>{{i.name}}</td>
+                            <td>{{i.friendName}}</td>
+                            <td>{{i.friendNickName}}</td>
+                            <th>{{i.DescribeYourFriend}}</th>
                           </tr>
                          
                         </tbody>
