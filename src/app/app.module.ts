@@ -6,6 +6,19 @@ import { AppComponent } from './app.component';
 import { FriendAddComponent } from './friend-add/friend-add.component';
 import { FriendViewAllComponent } from './friend-view-all/friend-view-all.component';
 import { FreindSearchComponent } from './freind-search/freind-search.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoutes: Routes=[
+  {
+    path:"",component:FriendAddComponent
+  },
+  {
+    path:"viewall",component:FriendViewAllComponent
+  },
+  {
+    path:"search",component:FreindSearchComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -16,7 +29,8 @@ import { FreindSearchComponent } from './freind-search/freind-search.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
