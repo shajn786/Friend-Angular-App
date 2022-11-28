@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class FreindSearchComponent {
 
+friendname=""
+
+search = ()=>
+{
+  let data:any={"friendname":this.friendname}
+
+  console.log(data)
+}
+
 }
