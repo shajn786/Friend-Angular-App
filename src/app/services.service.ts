@@ -12,4 +12,10 @@ export class ServicesService {
   {
     return this.http.get("https://dummyapifriends.herokuapp.com/view")
   }
+
+  addFreind=(dataToSend:any)=>
+  {
+    return this.http.post("https://dummyapifriends.herokuapp.com/adddata",dataToSend)
+  }
+
 }
